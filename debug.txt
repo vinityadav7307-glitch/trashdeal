@@ -1,0 +1,17 @@
+PHPUnit Started (PHPUnit 11.5.55 using PHP 8.2.12 (cli) on WINNT)
+Test Runner Configured
+Bootstrap Finished (C:\xampp\htdocs\trashdeal\vendor/autoload.php)
+Event Facade Sealed
+Test Suite Loaded (9 tests)
+Test Runner Started
+Test Suite Sorted
+Test Suite Filtered (1 test)
+Test Runner Execution Started (1 test)
+Test Suite Started (C:\xampp\htdocs\trashdeal\phpunit.xml, 1 test)
+Test Suite Started (Feature, 1 test)
+Test Suite Started (Tests\Feature\ApiTest, 1 test)
+Test Preparation Started (Tests\Feature\ApiTest::test_unauthenticated_profile_request_returns_json_401)
+Before Test Method Called (Tests\Feature\ApiTest::setUp)
+Before Test Method Finished:
+- Tests\Feature\ApiTest::setUp
+Test Prepared (Tests\Feature\ApiTest::test_unauthenticated_profile_request_returns_json_401)
