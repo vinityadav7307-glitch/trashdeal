@@ -16,7 +16,7 @@ Route::get('/tracking', fn () => $pageResponse('tracking'));
 Route::get('/pickups', fn () => $pageResponse('pickups'));
 Route::get('/rewards', fn () => $pageResponse('rewards'));
 Route::get('/profile', fn () => $pageResponse('profile'));
-Route::get('/migrate', function () {
-    \Artisan::call('migrate --force');
+  Route::get('/migrate', function () {
+    Artisan::call('migrate', ['--force' => true]);
     return "Migrated!";
 });
