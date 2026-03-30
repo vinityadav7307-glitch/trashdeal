@@ -16,7 +16,8 @@ Route::get('/tracking', fn () => $pageResponse('tracking'));
 Route::get('/pickups', fn () => $pageResponse('pickups'));
 Route::get('/rewards', fn () => $pageResponse('rewards'));
 Route::get('/profile', fn () => $pageResponse('profile'));
-  Route::get('/migrate', function () {
-    Artisan::call('migrate:fresh', ['--force' => true]);
-    return "Migrated!";
+Route::get('/migrate', function () {
+    \Artisan::call('migrate:fresh', ['--force' => true]);
+    \Artisan::call('db:seed', ['--force' => true]);
+    return "Migrated + Seeded!";
 });
