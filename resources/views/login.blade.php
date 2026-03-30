@@ -42,35 +42,39 @@
           </div>
         </div>
       </section>
+<section class="auth-panel auth-form-panel">
+  <div class="premium-pill">Secure login</div>
+  <h2 style="margin:0 0 10px;">Welcome back 👋</h2>
+  <p class="item-meta" style="margin:0 0 20px;">Use your phone or email to continue.</p>
 
-      <section class="auth-panel auth-form-panel">
-        <div class="premium-pill">Secure login</div>
-        <h2 style="margin:0 0 10px;">Welcome back 👋</h2>
-        <p class="item-meta" style="margin:0 0 20px;">Use your phone or email to continue.</p>
-        <form id="login-form" class="form-grid">
-          <div>
-            <label class="field-label" for="login">Phone or email</label>
-            <input id="login" name="login" class="input" placeholder="Enter phone or email" required>
-          </div>
-          <div>
-            <label class="field-label" for="password">Password</label>
-            <div class="password-field">
-              <input id="password" name="password" type="password" class="input" placeholder="Enter password" required>
-              <button class="password-toggle" id="toggle-password" type="button" aria-label="Show password">Show</button>
-            </div>
-          </div>
-          <button class="button primary" type="submit">Continue</button>
-        </form>
-        <div id="auth-status" class="status-box hidden"></div>
-        <div class="item" style="margin-top:18px;">
-          <p class="item-title">Demo accounts</p>
-          <div class="item-meta">Password for all demo accounts: <strong>secret123</strong></div>
-          <div class="item-meta" style="margin-top:10px;">User: <strong>9000010002</strong> or <strong>user@trashdeal.demo</strong></div>
-          <div class="item-meta">Premium user: <strong>9000010003</strong> or <strong>premium@trashdeal.demo</strong></div>
-          <div class="item-meta">Collector: <strong>9000010001</strong> or <strong>collector@trashdeal.demo</strong></div>
-        </div>
-        <p class="item-meta" style="margin-top:18px;">New here? <a href="/register" style="color:var(--brand-dark);font-weight:700;">Create an account</a></p>
-      </section>
+  <form id="login-form" class="form-grid">
+    <div>
+      <label class="field-label" for="login">Phone or email</label>
+      <input id="login" name="login" class="input" placeholder="Enter phone or email" required>
+    </div>
+
+    <div>
+      <label class="field-label" for="password">Password</label>
+      <div class="password-field">
+        <input id="password" name="password" type="password" class="input" placeholder="Enter password" required>
+        <button class="password-toggle" id="toggle-password" type="button">Show</button>
+      </div>
+    </div>
+
+    <button class="button primary" type="submit">Continue</button>
+  </form>
+
+  <div id="auth-status" class="status-box hidden"></div>
+
+  <!-- moved up -->
+  <p class="item-meta" style="margin-top:18px;">
+    New here? 
+    <a href="/register" style="color:var(--brand-dark);font-weight:700;">
+      Create an account
+    </a>
+  </p>
+</section>
+      
     </div>
   </main>
 
