@@ -29,3 +29,9 @@ Startup is handled by:
 - [Procfile](/C:/xampp/htdocs/trashdeal/Procfile)
 - [railway-start.sh](/C:/xampp/htdocs/trashdeal/tools/railway-start.sh)
 - [railway.json](/C:/xampp/htdocs/trashdeal/railway.json)
+
+Run this one time after deploy succeeds:
+
+```sh
+sh tools/railway-init.sh
+```
